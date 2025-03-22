@@ -1,0 +1,1745 @@
+<!-- FRONT PAGE CODE (Landing Page) -->
+<!DOCTYPE html>
+<!-- cSpell:ignore Waukesha Kubly Wauwatosa -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Hole: Connect - Uniting Community Organizations</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-gradient-flow {
+      background: linear-gradient(135deg, #1e40af, #3b82f6, #0ea5e9, #06b6d4);
+      background-size: 300% 300%;
+      animation: gradient-animation 15s ease infinite;
+    }
+    .text-gradient {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tree-animation {
+      animation: sway 6s ease-in-out infinite alternate;
+      transform-origin: bottom center;
+    }
+    .leaf-animation {
+      animation: pulse 3s ease-in-out infinite alternate;
+    }
+    .water-flow {
+      animation: flow 10s linear infinite;
+    }
+    @keyframes sway {
+      0% { transform: rotate(-2deg); }
+      100% { transform: rotate(2deg); }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
+    @keyframes flow {
+      0% { transform: translateX(-5%); }
+      50% { transform: translateX(0%); }
+      100% { transform: translateX(-5%); }
+    }
+    @keyframes gradient-animation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .swirl-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
+      z-index: -1;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M0,500 Q250,400 500,500 T1000,500 L1000,1000 L0,1000 Z" fill="%233b82f6"/><path d="M0,600 Q250,500 500,600 T1000,600 L1000,1000 L0,1000 Z" fill="%230ea5e9"/><path d="M0,700 Q250,600 500,700 T1000,700 L1000,1000 L0,1000 Z" fill="%2306b6d4"/><path d="M0,800 Q250,700 500,800 T1000,800 L1000,1000 L0,1000 Z" fill="%2322d3ee"/></svg>');
+      background-size: 100% 100%;
+    }
+    .section-gradient {
+      background: linear-gradient(180deg, rgba(243,244,246,0) 0%, rgba(243,244,246,1) 100%);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L8 6H4V10L2 12L4 14V18H8L12 22L16 18H20V14L22 12L20 10V6H16L12 2Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+            <circle cx="12" cy="12" r="3" fill="white" />
+          </svg>
+        </div>
+        <span class="text-xl font-bold text-gray-800">Water Hole: Connect</span>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
+        <a href="#features" class="text-gray-600 hover:text-blue-600 font-medium">Features</a>
+        <a href="#nonprofits" class="text-gray-600 hover:text-blue-600 font-medium">For Nonprofits</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="transition-to-directory px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium">Get Started</a>
+        <button class="md:hidden p-2 text-gray-600 hover:text-blue-600">
+          <svg class="w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+      <div class="swirl-background"></div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Connecting Resources, <br/>
+              <span class="text-gradient">Strengthening Communities</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-lg">
+              A collaborative platform for community organizations to connect, share resources, and better serve those in need in the Greater Milwaukee area.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="#" class="transition-to-directory px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium text-center shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                Join the Network
+              </a>
+              <a href="#about" class="px-8 py-3 bg-white hover:bg-gray-100 text-blue-600 rounded-full font-medium border border-blue-600 text-center">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <div class="tree-animation relative z-10">
+              <svg class="w-full h-auto" aria-hidden="true" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tree Trunk -->
+                <path d="M200 350C200 350 180 200 150 150C120 100 100 80 100 80C100 80 150 120 200 100C250 80 300 120 300 120C300 120 280 100 250 150C220 200 200 350 200 350Z" fill="#5D4037" />
+                <!-- Green Leaves -->
+                <g class="leaf-animation">
+                  <path d="M120 140C120 140 80 100 60 70C40 40 50 10 50 10C50 10 80 40 100 60C120 80 150 130 150 130C150 130 130 120 120 140Z" fill="#4CAF50" opacity="0.8" />
+                </g>
+                <!-- Blue Leaves -->
+                <g class="leaf-animation" style="animation-delay: 0.5s">
+                  <path d="M150 120C150 120 120 60 120 30C120 0 150 -10 150 -10C150 -10 160 20 170 50C180 80 190 130 190 130C190 130 170 110 150 120Z" fill="#2196F3" opacity="0.8" />
+                </g>
+                <!-- Orange Leaves -->
+                <g class="leaf-animation" style="animation-delay: 1s">
+                  <path d="M200 100C200 100 210 40 230 10C250 -20 280 -20 280 -20C280 -20 270 10 260 40C250 70 230 120 230 120C230 120 210 110 200 100Z" fill="#FF9800" opacity="0.8" />
+                </g>
+                <!-- Purple Leaves -->
+                <g class="leaf-animation" style="animation-delay: 1.5s">
+                  <path d="M250 110C250 110 290 60 320 40C350 20 380 30 380 30C380 30 350 50 330 70C310 90 280 130 280 130C280 130 270 120 250 110Z" fill="#9C27B0" opacity="0.8" />
+                </g>
+                <!-- People walking -->
+                <g transform="translate(110, 350) scale(0.6)">
+                  <path d="M10,0 C15,0 20,5 20,10 C20,15 15,20 10,20 C5,20 0,15 0,10 C0,5 5,0 10,0 Z" fill="#000" />
+                  <path d="M10,20 L10,40 L5,60 L15,60 L10,40 Z" fill="#000" />
+                  <path d="M10,30 L0,50 M10,30 L20,50" stroke="#000" stroke-width="3" />
+                </g>
+                <g transform="translate(150, 350) scale(0.6)">
+                  <path d="M10,0 C15,0 20,5 20,10 C20,15 15,20 10,20 C5,20 0,15 0,10 C0,5 5,0 10,0 Z" fill="#000" />
+                  <path d="M10,20 L10,40 L5,60 L15,60 L10,40 Z" fill="#000" />
+                  <path d="M10,30 L0,50 M10,30 L20,50" stroke="#000" stroke-width="3" />
+                </g>
+                <g transform="translate(190, 350) scale(0.6)">
+                  <path d="M10,0 C15,0 20,5 20,10 C20,15 15,20 10,20 C5,20 0,15 0,10 C0,5 5,0 10,0 Z" fill="#000" />
+                  <path d="M10,20 L10,40 L5,60 L15,60 L10,40 Z" fill="#000" />
+                  <path d="M10,30 L0,50 M10,30 L20,50" stroke="#000" stroke-width="3" />
+                </g>
+                <g transform="translate(230, 350) scale(0.6)">
+                  <path d="M10,0 C15,0 20,5 20,10 C20,15 15,20 10,20 C5,20 0,15 0,10 C0,5 5,0 10,0 Z" fill="#000" />
+                  <path d="M10,20 L10,40 L5,60 L15,60 L10,40 Z" fill="#000" />
+                  <path d="M10,30 L0,50 M10,30 L20,50" stroke="#000" stroke-width="3" />
+                </g>
+                <!-- Water flows -->
+                <g class="water-flow">
+                  <path d="M0 380C50 360 100 370 150 380C200 390 250 370 300 380C350 390 400 360 450 380L450 400L0 400Z" fill="#2196F3" opacity="0.3" />
+                </g>
+                <g class="water-flow" style="animation-delay: 0.5s">
+                  <path d="M0 385C50 375 100 380 150 385C200 390 250 380 300 385C350 390 400 375 450 385L450 400L0 400Z" fill="#03A9F4" opacity="0.3" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">The Water Hole Concept</h2>
+          <p class="text-xl text-gray-600">Inspired by nature's gathering places that sustain life and build community.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-600 mb-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Source of Life and Provision</h3>
+              <p class="text-gray-600">
+                Water holes universally represent life-giving sources. In ancient times, they provided essential water for survival, symbolizing provision and sustenance. In our context, they represent the flow of resources, information, and support between organizations.
+              </p>
+            </div>
+            <div class="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-600 mb-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Community and Connection</h3>
+              <p class="text-gray-600">
+                Throughout history, water holes served as communal gathering places where people met and bonded. They facilitated social interaction and connection. Our platform creates a digital "water hole" where community organizations can gather, connect, and collaborate.
+              </p>
+            </div>
+            <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Empowerment Through Access</h3>
+              <p class="text-gray-600">
+                Access to water has transformed lives by empowering communities. Similarly, access to shared resources, knowledge, and connections through our platform empowers organizations to increase their impact and better serve the community.
+              </p>
+            </div>
+          </div>
+          <div class="bg-gradient-flow text-white p-8 rounded-2xl shadow-xl">
+            <h3 class="text-2xl font-bold mb-6">Our Mission</h3>
+            <p class="text-lg mb-6">
+              Water Hole: Connect brings together community organizations and nonprofits in the Greater Milwaukee area to break down silos, foster collaboration, and create a more efficient and effective support network for those in need.
+            </p>
+            <p class="text-lg mb-6">
+              By unifying our efforts, we can provide more comprehensive support, eliminate service gaps, reduce duplication, and maximize our collective impact on the community.
+            </p>
+            <div class="pt-4 border-t border-white border-opacity-30">
+              <a href="#" class="transition-to-directory inline-block px-6 py-3 bg-white text-blue-700 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                Join the Movement
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Platform Features</h2>
+          <p class="text-xl text-gray-600">Tools designed to foster collaboration and strengthen communities.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all hover:scale-105 hover:shadow-lg">
+            <div class="h-3 bg-blue-600"></div>
+            <div class="p-6">
+              <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-blue-600" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Organization Network</h3>
+              <p class="text-gray-600 mb-6">
+                Discover and connect with other community organizations serving similar populations or offering complementary services.
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Visual organization directory</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Advanced search capabilities</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Service area mapping</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all hover:scale-105 hover:shadow-lg">
+            <div class="h-3 bg-purple-600"></div>
+            <div class="p-6">
+              <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-purple-600" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Communication Tools</h3>
+              <p class="text-gray-600 mb-6">
+                Connect directly with other organizations using our integrated communication tools designed for nonprofits.
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Secure messaging system</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Video and audio calls</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>CB-style broadcast channels</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-all hover:scale-105 hover:shadow-lg">
+            <div class="h-3 bg-green-600"></div>
+            <div class="p-6">
+              <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Resource Sharing</h3>
+              <p class="text-gray-600 mb-6">
+                Share resources, coordinate services, and work together to strengthen the community support system.
+              </p>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Resource exchange listings</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Event coordination</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Volunteer matching</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 text-center">
+          <a href="#" class="transition-to-directory inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+            Explore the Platform
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Nonprofit Section -->
+    <section id="nonprofits" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">For Milwaukee Nonprofits</h2>
+          <p class="text-xl text-gray-600">Join the network of organizations creating positive change in our community.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-8 md:p-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Join the Water Hole Initiative</h3>
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <div class="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center mr-4">
+                    <svg class="w-5 h-5 text-blue-600" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1">Break Down Silos</h4>
+                    <p class="text-gray-600">
+                      Connect with other organizations to share information and coordinate services for those in need.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-10 h-10 rounded-full bg-purple-100 flex-shrink-0 flex items-center justify-center mr-4">
+                    <svg class="w-5 h-5 text-purple-600" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1">Increase Your Impact</h4>
+                    <p class="text-gray-600">
+                      Collaborate with complementary organizations to provide more comprehensive support to clients.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-10 h-10 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center mr-4">
+                    <svg class="w-5 h-5 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1">Strengthen Community</h4>
+                    <p class="text-gray-600">
+                      Be part of a network that's creating a more resilient support system for our community.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="transition-to-directory inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium">
+                Join the Network
+              </a>
+            </div>
+            <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-8 md:p-12 flex flex-col justify-center">
+              <blockquote class="text-lg italic mb-6">
+                "The Water Hole: Connect initiative represents a paradigm shift in how community organizations work together. By creating a central hub where nonprofits can connect, communicate, and coordinate, we're building a stronger safety net for everyone in our community."
+              </blockquote>
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-white bg-opacity-30 flex items-center justify-center mr-4">
+                  <span class="text-xl font-bold">JD</span>
+                </div>
+                <div>
+                  <div class="font-semibold">Jane Doe</div>
+                  <div class="text-sm text-white text-opacity-80">Executive Director, Milwaukee Community Foundation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-6">
+            <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L8 6H4V10L2 12L4 14V18H8L12 22L16 18H20V14L22 12L20 10V6H16L12 2Z" stroke="currentColor" stroke-width="1" />
+                <circle cx="12" cy="12" r="3" fill="white" />
+              </svg>
+            </div>
+            <span class="text-xl font-bold">Water Hole: Connect</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            A collaborative platform for community organizations to connect, share resources, and better serve those in need.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.026 10.026 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <p>© 2025 Water Hole Initiative. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Simple mobile navigation toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        const nav = document.querySelector('nav.hidden.md\\:flex');
+        if (mobileMenuButton && nav) {
+          mobileMenuButton.addEventListener('click', function() {
+            if (nav.classList.contains('hidden')) {
+              nav.classList.remove('hidden');
+              nav.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'right-4', 'bg-white', 'p-4', 'rounded-lg', 'shadow-lg', 'z-50', 'space-y-4');
+            } else {
+              nav.classList.add('hidden');
+              nav.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'right-4', 'bg-white', 'p-4', 'rounded-lg', 'shadow-lg', 'z-50', 'space-y-4');
+            }
+          });
+        }
+      });
+    </script>
+</body>
+</html>
+
+<!-- ================= Directory Page Code (Exact Code) ================= -->
+<!DOCTYPE html>
+<!-- cSpell:ignore Waukesha Kubly Wauwatosa WRTP WWBIC Bottlehouse Skool Plankinton Riverworks Concordia Havenwoods Southside Barstow Bader Cristo Crohns Bluemound -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Hole Connect - Community Resource Directory</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+    .bg-gradient-flowing {
+      background: linear-gradient(135deg, #0056b3, #008080, #4682B4);
+      background-size: 200% 200%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .org-card {
+      transition: all 0.3s ease;
+    }
+    .org-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    #org-details-modal {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    #org-details-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    #org-details-panel {
+      transform: scale(0.9);
+      transition: transform 0.3s;
+    }
+    #org-details-modal.active #org-details-panel {
+      transform: scale(1);
+    }
+    .housing-badge { background-color: #93c5fd; color: #1e3a8a; }
+    .youth-badge { background-color: #fcd34d; color: #92400e; }
+    .food-badge { background-color: #86efac; color: #166534; }
+    .health-badge { background-color: #fca5a5; color: #991b1b; }
+    .community-badge { background-color: #c4b5fd; color: #5b21b6; }
+    .workforce-badge { background-color: #fdba74; color: #9a3412; }
+    .family-badge { background-color: #a5b4fc; color: #3730a3; }
+    .legal-badge { background-color: #fda4af; color: #9d174d; }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+  <header class="fixed w-full bg-white bg-opacity-95 shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-2">
+        <div class="w-10 h-10 rounded-full bg-gradient-flowing flex items-center justify-center text-white">
+          <svg class="w-6 h-6 text-blue-600" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L8 6H4V10L2 12L4 14V18H8L12 22L16 18H20V14L22 12L20 10V6H16L12 2Z" fill="currentColor" stroke="white" stroke-width="1"/>
+            <circle cx="12" cy="12" r="3" fill="white"/>
+          </svg>
+        </div>
+        <span class="text-xl font-bold text-gray-800">Water Hole Connect</span>
+      </a>
+      <div class="text-center hidden md:block">
+        <h1 class="text-lg font-semibold text-gray-700">Community Resource Directory</h1>
+        <p class="text-sm text-gray-600">Find help and services in the Greater Milwaukee area</p>
+      </div>
+      <div class="hidden md:block">
+        <span class="text-sm text-gray-600">Need immediate help?</span>
+        <a href="tel:211" class="ml-2 px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Call 211</a>
+      </div>
+    </div>
+  </header>
+  <main class="pt-24 pb-10">
+    <div class="container mx-auto px-4 md:px-6">
+      <!-- Mobile Banner -->
+      <div class="mb-6 block md:hidden">
+        <div class="bg-blue-50 p-4 rounded-lg text-center">
+          <h1 class="text-lg font-semibold text-gray-700">Community Resource Directory</h1>
+          <p class="text-sm text-gray-600 mb-2">Find help and services in the Greater Milwaukee area</p>
+          <div class="mt-2">
+            <span class="text-sm text-gray-600">Need immediate help?</span>
+            <a href="tel:211" class="ml-2 px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Call 211</a>
+          </div>
+        </div>
+      </div>
+      <!-- Search & Filter -->
+      <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+        <div class="w-full md:w-1/2 relative mb-4 md:mb-0">
+          <input id="resource-search" type="text" placeholder="Search for resources..." class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+          <i class="fas fa-search absolute left-4 top-4 text-gray-500" aria-hidden="true"></i>
+        </div>
+        <div class="w-full md:w-auto flex flex-wrap">
+          <select id="resource-category" class="w-full md:w-auto px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent mr-0 md:mr-2 mb-2 md:mb-0">
+            <option value="">All Categories</option>
+            <option value="Housing">Housing &amp; Shelter</option>
+            <option value="Food">Food Assistance</option>
+            <option value="Youth">Youth Services</option>
+            <option value="Health">Health &amp; Mental Health</option>
+            <option value="Workforce">Employment</option>
+            <option value="Family">Family Services</option>
+            <option value="Community">Community Support</option>
+            <option value="Legal">Legal &amp; Crisis Help</option>
+          </select>
+          <select id="resource-area" class="w-full md:w-auto px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+            <option value="">All Areas</option>
+            <option value="north">North Side</option>
+            <option value="south">South Side</option>
+            <option value="east">East Side</option>
+            <option value="west">West Side</option>
+            <option value="downtown">Downtown</option>
+            <option value="waukesha">Waukesha</option>
+          </select>
+        </div>
+      </div>
+      <!-- Quick Filter Badges -->
+      <div class="mb-6 flex flex-wrap">
+        <div class="mr-2 mb-2">
+          <button class="px-3 py-1 rounded-full housing-badge filter-badge" data-category="Housing">Housing &amp; Shelter</button>
+        </div>
+        <div class="mr-2 mb-2">
+          <button class="px-3 py-1 rounded-full food-badge filter-badge" data-category="Food">Food Assistance</button>
+        </div>
+        <div class="mr-2 mb-2">
+          <button class="px-3 py-1 rounded-full youth-badge filter-badge" data-category="Youth">Youth Services</button>
+        </div>
+        <div class="mr-2 mb-2">
+          <button class="px-3 py-1 rounded-full health-badge filter-badge" data-category="Health">Health Services</button>
+        </div>
+        <div class="mr-2 mb-2">
+          <button class="px-3 py-1 rounded-full workforce-badge filter-badge" data-category="Workforce">Employment</button>
+        </div>
+        <div class="mr-2 mb-2">
+          <button class="px-3 py-1 rounded-full family-badge filter-badge" data-category="Family">Family Services</button>
+        </div>
+        <div class="mr-2 mb-2">
+          <button class="px-3 py-1 rounded-full legal-badge filter-badge" data-category="Legal">Crisis Support</button>
+        </div>
+      </div>
+      <!-- Organization Cards -->
+      <div id="org-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cards will be injected here via JavaScript -->
+      </div>
+    </div>
+  </main>
+  <!-- Organization Details Modal -->
+  <div id="org-details-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+    <div id="org-details-panel" class="bg-white rounded-lg shadow-lg w-full max-w-2xl overflow-hidden max-h-screen overflow-y-auto">
+      <div class="h-4 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500"></div>
+      <div class="p-6">
+        <div class="flex justify-between items-start mb-6">
+          <div class="flex items-center">
+            <div id="org-details-logo" class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center text-gray-800 font-bold mr-4"></div>
+            <div>
+              <h2 id="org-details-name" class="text-2xl font-bold text-gray-900 mb-1"></h2>
+              <div id="org-details-category-container" class="flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+          <button id="close-org-details" class="text-gray-500 hover:text-gray-700">
+            <i class="fas fa-times text-xl" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">About</h3>
+              <p id="org-details-about" class="text-gray-700"></p>
+            </div>
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Services Offered</h3>
+              <ul id="org-details-services" class="list-disc list-inside text-gray-700 space-y-1"></ul>
+            </div>
+          </div>
+          <div>
+            <div class="bg-blue-50 rounded-lg p-5 mb-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-4">Contact Information</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <i class="fas fa-clock mt-1 text-blue-600 w-5" aria-hidden="true"></i>
+                  <div class="ml-3">
+                    <span class="text-sm font-medium text-gray-900">Hours</span>
+                    <p id="org-modal-status" class="text-sm text-gray-700"></p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-map-marker-alt mt-1 text-blue-600 w-5" aria-hidden="true"></i>
+                  <div class="ml-3">
+                    <span class="text-sm font-medium text-gray-900">Address</span>
+                    <p id="org-modal-address" class="text-sm text-gray-700"></p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-phone mt-1 text-blue-600 w-5" aria-hidden="true"></i>
+                  <div class="ml-3">
+                    <span class="text-sm font-medium text-gray-900">Phone</span>
+                    <p id="org-modal-phone" class="text-sm text-gray-700"></p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-envelope mt-1 text-blue-600 w-5" aria-hidden="true"></i>
+                  <div class="ml-3">
+                    <span class="text-sm font-medium text-gray-900">Email</span>
+                    <p id="org-modal-email" class="text-sm text-blue-600 hover:text-blue-800"></p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-globe mt-1 text-blue-600 w-5" aria-hidden="true"></i>
+                  <div class="ml-3">
+                    <span class="text-sm font-medium text-gray-900">Website</span>
+                    <p id="org-modal-website" class="text-sm text-blue-600 hover:text-blue-800"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-2">
+              <a id="org-modal-directions" href="#" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-center text-white rounded-lg hover:bg-blue-700">
+                <i class="fas fa-directions mr-2" aria-hidden="true"></i>Get Directions
+              </a>
+              <a id="org-modal-call" href="#" class="flex-1 px-4 py-2 bg-green-600 text-center text-white rounded-lg hover:bg-green-700">
+                <i class="fas fa-phone-alt mr-2" aria-hidden="true"></i>Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    /* --- Organization Data --- */
+    const organizations = [
+      {
+        id: 1,
+        name: "Charles E. Kubly Foundation",
+        category: "Health",
+        address: "11118 W. Potter Rd, Suite B, Milwaukee, WI 53224",
+        phone: "(414) 477-8560",
+        email: "",
+        website: "https://www.charlesekublyfoundation.org",
+        status: "Open Now",
+        area: "north",
+        about: "Focuses on depression/mood disorders and improving mental health in the community.",
+        services: ["Depression support", "Community mental health programs"]
+      },
+      {
+        id: 2,
+        name: "Broadscope Disability Services",
+        category: "Health",
+        address: "6102 W. Layton Ave., Greenfield, WI 53220",
+        phone: "(414) 329-4500",
+        email: "",
+        website: "http://www.broadscope.org",
+        status: "Open Now",
+        area: "south",
+        about: "Provides disability support services and resources.",
+        services: ["Disability support", "Advocacy services"]
+      },
+      {
+        id: 3,
+        name: "Curative Care Network",
+        category: "Health",
+        address: "1000 N. 92nd St., Milwaukee, WI 53226",
+        phone: "(414) 259-1414",
+        email: "",
+        website: "http://www.curative.org",
+        status: "Open Now",
+        area: "north",
+        about: "Offers rehabilitation services and health support for community members.",
+        services: ["Rehabilitation services", "Health education"]
+      },
+      {
+        id: 4,
+        name: "Milwaukee Center for Independence (MCFI)",
+        category: "Health",
+        address: "2020 W. Wells St., Milwaukee, WI 53233",
+        phone: "(414) 937-2020",
+        email: "",
+        website: "http://www.mcfi.net",
+        status: "Open Now",
+        area: "west",
+        about: "Supports disability and mental health with community resources.",
+        services: ["Disability support", "Mental health programs"]
+      },
+      {
+        id: 5,
+        name: "Autism Society of Southeastern Wisconsin",
+        category: "Health",
+        address: "3720 N. 124th Street, Suite O, Wauwatosa, WI 53222",
+        phone: "(414) 988-1260",
+        email: "",
+        website: "http://www.assew.org",
+        status: "Open Now",
+        area: "north",
+        about: "Provides support and advocacy for individuals with autism and their families.",
+        services: ["Support groups", "Advocacy", "Community programs"]
+      },
+      {
+        id: 6,
+        name: "Employ Milwaukee",
+        category: "Workforce",
+        address: "2342 N. 27th St., Milwaukee, WI 53210",
+        phone: "(414) 270-1700",
+        email: "info@employmilwaukee.org",
+        website: "https://employmilwaukee.org",
+        status: "Open Now",
+        area: "north",
+        about: "Provides job placement, career training, and workforce development for Milwaukee residents.",
+        services: ["Job training", "Career counseling", "Employment services", "Youth apprenticeships"]
+      },
+      {
+        id: 7,
+        name: "WRTP BIG STEP",
+        category: "Workforce",
+        address: "3841 W. Wisconsin Ave., Milwaukee, WI",
+        phone: "(414) 342-9797",
+        email: "",
+        website: "https://wrtp.org",
+        status: "Open Now",
+        area: "west",
+        about: "Offers construction and manufacturing apprenticeships.",
+        services: ["Apprenticeships", "Vocational training"]
+      },
+      {
+        id: 8,
+        name: "Wisconsin Women's Business Initiative Corp (WWBIC)",
+        category: "Workforce",
+        address: "1533 N RiverCenter Dr, Milwaukee, WI",
+        phone: "(414) 263-5450",
+        email: "",
+        website: "https://www.wwbic.com",
+        status: "Open Now",
+        area: "north",
+        about: "Supports small business development and entrepreneurship for women.",
+        services: ["Business counseling", "Financial planning", "Mentorship programs"]
+      },
+      {
+        id: 9,
+        name: "Social Development Commission",
+        category: "Workforce",
+        address: "4041 N Richards St, Milwaukee, WI 53212",
+        phone: "(414) 906-2700",
+        email: "",
+        website: "https://cr-sdc.org/",
+        status: "Open Now",
+        area: "north",
+        about: "Offers job training in construction and culinary arts.",
+        services: ["Job training", "Vocational education"]
+      },
+      {
+        id: 10,
+        name: "Creative Employment Opportunities dba TransCen, Inc.",
+        category: "Workforce",
+        address: "101 W. Pleasant St., Bottlehouse B, Suite #108, Milwaukee, WI 53212",
+        phone: "(414) 277-8506",
+        email: "",
+        website: "http://www.ceomke.com/",
+        status: "Open Now",
+        area: "downtown",
+        about: "Provides employment opportunities and job training.",
+        services: ["Job placement", "Career training"]
+      },
+      {
+        id: 11,
+        name: "Milwaukee Careers Cooperative (MCC)",
+        category: "Workforce",
+        address: "Milwaukee, WI",
+        phone: "",
+        email: "",
+        website: "https://www.mccjobs.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Supports workforce development and career opportunities in Milwaukee.",
+        services: ["Job placement", "Career coaching"]
+      },
+      {
+        id: 12,
+        name: "TechForce Training Center",
+        category: "Workforce",
+        address: "1916 N 4th St, Milwaukee, WI",
+        phone: "",
+        email: "",
+        website: "https://www.hacm.org/programs/community-supportive-services/employment-economic-self-sufficiency/techforce-techhire",
+        status: "Open Now",
+        area: "north",
+        about: "Offers technology and technical skills training programs.",
+        services: ["Tech training", "Certification courses"]
+      },
+      {
+        id: 13,
+        name: "Feeding America Eastern Wisconsin",
+        category: "Food",
+        address: "1700 W Fond du Lac Ave, Milwaukee, WI 53205",
+        phone: "(414) 931-7400",
+        email: "info@feedingamericawi.org",
+        website: "https://feedingamericawi.org",
+        status: "Open Now",
+        area: "north",
+        about: "Eastern Wisconsin’s leading hunger-relief organization operating a food bank network.",
+        services: ["Food bank distribution", "Hunger relief programs"]
+      },
+      {
+        id: 14,
+        name: "Hunger Task Force",
+        category: "Food",
+        address: "5000 W Electric Ave., Milwaukee, WI",
+        phone: "(414) 777-0483",
+        email: "info@hungertaskforce.org",
+        website: "https://www.hungertaskforce.org",
+        status: "Open Now",
+        area: "west",
+        about: "Provides free food distribution and nutrition education.",
+        services: ["Food distribution", "Nutrition education"]
+      },
+      {
+        id: 15,
+        name: "Running Rebels",
+        category: "Youth",
+        address: "1300 W Fond Du Lac Ave, Milwaukee, WI 53205",
+        phone: "(414) 264-8222",
+        email: "info@runningrebels.org",
+        website: "https://www.runningrebels.org",
+        status: "Open Now",
+        area: "north",
+        about: "Youth mentoring and development programs.",
+        services: ["Youth mentoring", "Athletics", "Violence prevention", "Arts & Music", "Education support", "Community events"]
+      },
+      {
+        id: 16,
+        name: "COA Youth & Family Centers",
+        category: "Youth",
+        address: "909 E North Ave, Milwaukee, WI 53212",
+        phone: "(414) 263-8383",
+        email: "info@coa-yfc.org",
+        website: "https://www.coa-yfc.org",
+        status: "Open Now",
+        area: "east",
+        about: "Provides early childhood education and after-school programs.",
+        services: ["Early childhood education", "After-school programs", "Family resource center"]
+      },
+      {
+        id: 17,
+        name: "Urban Underground",
+        category: "Youth",
+        address: "2342 N 27th St, Milwaukee, WI 53210",
+        phone: "(414) 444-8726",
+        email: "info@urbanunderground.org",
+        website: "https://urbanunderground.org",
+        status: "Open Now",
+        area: "north",
+        about: "Focuses on youth leadership development and community organizing.",
+        services: ["Leadership training", "Community organizing", "Social justice workshops"]
+      },
+      {
+        id: 18,
+        name: "Milwaukee Christian Center",
+        category: "Youth",
+        address: "807 S 14th St, Milwaukee, WI 53204",
+        phone: "(414) 645-5350",
+        email: "info@mccwi.org",
+        website: "https://www.mccwi.org",
+        status: "Open Now",
+        area: "south",
+        about: "Youth development, senior services, and housing rehabilitation.",
+        services: ["Youth development programs", "Senior services", "Housing rehabilitation"]
+      },
+      {
+        id: 19,
+        name: "Urban Ecology Center",
+        category: "Youth",
+        address: "1500 E Park Pl, Milwaukee, WI 53211",
+        phone: "(414) 964-8505",
+        email: "",
+        website: "https://urbanecologycenter.org",
+        status: "Open Now",
+        area: "east",
+        about: "Provides environmental education and community building programs.",
+        services: ["Environmental education", "Community events"]
+      },
+      {
+        id: 20,
+        name: "TRUE Skool",
+        category: "Youth",
+        address: "161 W Wisconsin Ave, Milwaukee, WI 53203",
+        phone: "(414) 800-5134",
+        email: "info@trueskool.org",
+        website: "https://www.trueskool.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Uses hip-hop culture and urban arts to foster youth development.",
+        services: ["Hip-hop culture workshops", "Urban arts programs"]
+      },
+      {
+        id: 21,
+        name: "Neu-Life Community Development",
+        category: "Youth",
+        address: "2014 W North Ave, Milwaukee, WI 53205",
+        phone: "(414) 933-4973",
+        email: "",
+        website: "https://www.neu-life.org",
+        status: "Open Now",
+        area: "north",
+        about: "Empowers youth and communities through development programs.",
+        services: ["Youth development", "Community empowerment"]
+      },
+      {
+        id: 22,
+        name: "Journey House",
+        category: "Youth",
+        address: "2110 W Scott St, Milwaukee, WI 53204",
+        phone: "(414) 647-0548",
+        email: "",
+        website: "https://www.journeyhouse.org",
+        status: "Open Now",
+        area: "south",
+        about: "Provides youth development, adult education, and workforce readiness programs.",
+        services: ["Youth development", "Adult education", "Workforce readiness"]
+      },
+      {
+        id: 23,
+        name: "Big Brothers Big Sisters of Metro Milwaukee",
+        category: "Youth",
+        address: "788 N. Jefferson Street, Suite 600, Milwaukee, WI 53202",
+        phone: "(414) 258-4778",
+        email: "info@bbbsmilwaukee.org",
+        website: "http://www.bbbsmilwaukee.org",
+        status: "Open Now",
+        area: "east",
+        about: "Creates one-to-one mentoring relationships for youth.",
+        services: ["Youth mentoring"]
+      },
+      {
+        id: 24,
+        name: "BizStarts",
+        category: "Workforce",
+        address: "1555 RiverCenter Drive, Suite 210, Milwaukee, WI 53212",
+        phone: "(414) 973-2334",
+        email: "",
+        website: "http://www.bizstarts.com",
+        status: "Open Now",
+        area: "downtown",
+        about: "Supports local businesses and entrepreneurship.",
+        services: ["Business incubator", "Entrepreneurial support"]
+      },
+      {
+        id: 25,
+        name: "City Year Milwaukee",
+        category: "Youth",
+        address: "648 N. Plankinton Ave., Suite 190, Milwaukee, WI 53203",
+        phone: "(414) 223-0150",
+        email: "",
+        website: "http://www.cityyear.org/milwaukee",
+        status: "Open Now",
+        area: "downtown",
+        about: "Engages young adults in community service to help local schools.",
+        services: ["Community service", "Education support"]
+      },
+      {
+        id: 26,
+        name: "CLUB KIDS IN DANGER SAVED INC.",
+        category: "Youth",
+        address: "2342 W. North Ave., Milwaukee, WI 53208",
+        phone: "(414) 380-3853",
+        email: "",
+        website: "http://www.clubkids414.org",
+        status: "Open Now",
+        area: "north",
+        about: "Provides support and development programs for at-risk youth.",
+        services: ["Youth mentoring", "After-school programs"]
+      },
+      {
+        id: 27,
+        name: "Boys & Girls Clubs of Greater Milwaukee",
+        category: "Youth",
+        address: "1558 N. 6th Street, Milwaukee, WI 53212",
+        phone: "(414) 267-8100",
+        email: "info@bgcmilwaukee.org",
+        website: "https://www.bgcmilwaukee.org",
+        status: "After-School Hours",
+        area: "east",
+        about: "Provides after-school and summer programming for Milwaukee youth.",
+        services: ["After-school programs", "Youth mentorship", "Academic support"]
+      },
+      {
+        id: 28,
+        name: "Community First",
+        category: "Housing",
+        address: "3942 W. Lisbon Ave., Milwaukee, WI 53208",
+        phone: "(414) 377-4481",
+        email: "",
+        website: "https://cfmke.org/",
+        status: "Open Now",
+        area: "west",
+        about: "Works to provide affordable housing solutions.",
+        services: ["Affordable housing", "Home repair assistance"]
+      },
+      {
+        id: 29,
+        name: "Walnut Way Conservation Corp",
+        category: "Housing",
+        address: "2240 N 17th St, Milwaukee, WI 53205",
+        phone: "(414) 264-2326",
+        email: "contact@walnutway.org",
+        website: "https://walnutway.org",
+        status: "Open Now",
+        area: "north",
+        about: "Focuses on neighborhood revitalization and economic development.",
+        services: ["Neighborhood revitalization", "Economic development"]
+      },
+      {
+        id: 30,
+        name: "Community Development Alliance (CDA)",
+        category: "Housing",
+        address: "Milwaukee, WI",
+        phone: "",
+        email: "",
+        website: "https://www.housingplan.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Works on community development and affordable housing initiatives.",
+        services: ["Community development", "Affordable housing programs"]
+      },
+      {
+        id: 31,
+        name: "Riverworks Development Corporation",
+        category: "Housing",
+        address: "526 E Concordia Ave, Milwaukee, WI 53212",
+        phone: "(414) 906-9650",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "east",
+        about: "Focuses on economic development, job training, and neighborhood revitalization.",
+        services: ["Economic development", "Job training", "Neighborhood revitalization"]
+      },
+      {
+        id: 32,
+        name: "Northwest Side Community Development Corporation",
+        category: "Housing",
+        address: "4201 N 27th St, Milwaukee, WI 53216",
+        phone: "(414) 444-8200",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "north",
+        about: "Provides workforce training and financial education to revitalize communities.",
+        services: ["Workforce training", "Financial education"]
+      },
+      {
+        id: 33,
+        name: "Near West Side Partners",
+        category: "Housing",
+        address: "624 N 24th St, Milwaukee, WI 53233",
+        phone: "(414) 933-0640",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "downtown",
+        about: "Supports community development and economic growth on the near west side.",
+        services: ["Community development", "Economic growth initiatives"]
+      },
+      {
+        id: 34,
+        name: "Layton Boulevard West Neighbors",
+        category: "Housing",
+        address: "1545 S Layton Blvd, Milwaukee, WI 53215",
+        phone: "(414) 383-9038",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "south",
+        about: "Focuses on housing improvement, economic development, and community engagement.",
+        services: ["Housing improvement", "Economic development", "Community engagement"]
+      },
+      {
+        id: 35,
+        name: "Clarke Square Neighborhood Initiative",
+        category: "Housing",
+        address: "1818 W National Ave, Milwaukee, WI 53204",
+        phone: "(414) 647-0548",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "downtown",
+        about: "Focuses on neighborhood improvement and economic opportunities.",
+        services: ["Neighborhood improvement", "Youth development", "Economic opportunities"]
+      },
+      {
+        id: 36,
+        name: "Havenwoods Economic Development Corporation",
+        category: "Housing",
+        address: "6161 N 64th St, Milwaukee, WI 53218",
+        phone: "(414) 431-2271",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "north",
+        about: "Provides business development and job creation programs.",
+        services: ["Business development", "Job creation", "Neighborhood improvement"]
+      },
+      {
+        id: 37,
+        name: "Southside Organizing Center",
+        category: "Housing",
+        address: "1300 S Layton Blvd, Milwaukee, WI 53215",
+        phone: "(414) 672-8090",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "south",
+        about: "Focuses on community organizing, leadership development, and neighborhood improvement.",
+        services: ["Community organizing", "Leadership development"]
+      },
+      {
+        id: 38,
+        name: "Sherman Park Community Association",
+        category: "Housing",
+        address: "3526 W Fond Du Lac Ave, Milwaukee, WI 53216",
+        phone: "(414) 444-9803",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "west",
+        about: "Supports neighborhood revitalization, youth programs, and community engagement.",
+        services: ["Neighborhood revitalization", "Youth programs", "Community events"]
+      },
+      {
+        id: 39,
+        name: "Bridge Builders",
+        category: "Housing",
+        address: "4642 N. 40th St., Milwaukee, WI 53209",
+        phone: "(414) 217-3095",
+        email: "",
+        website: "https://bridgebuildersmke.org/",
+        status: "Open Now",
+        area: "north",
+        about: "Focuses on community building and neighborhood improvement.",
+        services: ["Community development", "Neighborhood programs"]
+      },
+      {
+        id: 40,
+        name: "Community Warehouse",
+        category: "Housing",
+        address: "521 S. 9th Street, Milwaukee, WI 53204",
+        phone: "(414) 383-7792",
+        email: "",
+        website: "http://www.thecommunitywarehouse.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Provides resources and support for neighborhood revitalization.",
+        services: ["Resource center", "Community support"]
+      },
+      {
+        id: 41,
+        name: "Dominican Center for Women, Inc.",
+        category: "Housing",
+        address: "2470 W. Locust Street, Milwaukee, WI 53206",
+        phone: "(414) 444-9930",
+        email: "",
+        website: "http://www.dominican-center.org",
+        status: "Open Now",
+        area: "west",
+        about: "Supports neighborhood and housing stability for women.",
+        services: ["Housing support", "Advocacy", "Community programs"]
+      },
+      {
+        id: 42,
+        name: "Sixteenth Street Community Health Centers",
+        category: "Health",
+        address: "1337 S Cesar E Chavez Dr, Milwaukee, WI 53204",
+        phone: "(414) 672-1353",
+        email: "info@sschc.org",
+        website: "https://sschc.org",
+        status: "Open Now",
+        area: "south",
+        about: "Provides quality medical, behavioral health, and social services to underserved communities.",
+        services: ["Primary care", "Behavioral health services", "Social services"]
+      },
+      {
+        id: 43,
+        name: "Aurora Health Care Foundation",
+        category: "Health",
+        address: "950 N. 12th Street, Building A, 5th Floor, Milwaukee, WI 53233",
+        phone: "(877) 460-8730",
+        email: "",
+        website: "https://www.advocateaurorahealth.org/foundations/contact-us/",
+        status: "Open Now",
+        area: "north",
+        about: "Provides medical support and community health investments.",
+        services: ["Medical support", "Community health programs"]
+      },
+      {
+        id: 44,
+        name: "Community Smiles Dental",
+        category: "Health",
+        address: "210 NW Barstow St, Ste. 305, Waukesha, WI 53188",
+        phone: "(262) 522-7645",
+        email: "",
+        website: "https://www.communitysmiles.org/",
+        status: "Open Now",
+        area: "waukesha",
+        about: "Provides dental care services to the community.",
+        services: ["Dental care", "Oral health education"]
+      },
+      {
+        id: 45,
+        name: "Milwaukee Urban League",
+        category: "Community",
+        address: "435 W North Ave, Milwaukee, WI 53212",
+        phone: "(414) 374-5850",
+        email: "info@tmul.org",
+        website: "https://tmul.org",
+        status: "Open Now",
+        area: "north",
+        about: "Provides economic empowerment and educational opportunities for underserved communities.",
+        services: ["Job placement", "Education programs", "Civil rights advocacy"]
+      },
+      {
+        id: 46,
+        name: "Greater Milwaukee Foundation",
+        category: "Community",
+        address: "Milwaukee, WI (Address not fully provided)",
+        phone: "",
+        email: "",
+        website: "https://www.greatermilwaukeefoundation.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Invests in and supports community initiatives and nonprofits.",
+        services: ["Community investment", "Philanthropic support"]
+      },
+      {
+        id: 47,
+        name: "United Way of Greater Milwaukee & Waukesha County",
+        category: "Community",
+        address: "Milwaukee & Waukesha County, WI",
+        phone: "",
+        email: "",
+        website: "https://www.unitedwaygmwc.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Invests in community programs and provides support for vulnerable populations.",
+        services: ["Community support", "Resource coordination"]
+      },
+      {
+        id: 48,
+        name: "Hmong American Friendship Association",
+        category: "Community",
+        address: "3824 W Vliet St, Milwaukee, WI 53208",
+        phone: "(414) 344-6575",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "west",
+        about: "Supports the Hmong community with cultural and community services.",
+        services: ["Cultural programs", "Community services"]
+      },
+      {
+        id: 49,
+        name: "Community Advocates",
+        category: "Community",
+        address: "728 N. James Lovell St., Milwaukee, WI 53233",
+        phone: "(414) 449-4777",
+        email: "info@communityadvocates.org",
+        website: "http://communityadvocates.net",
+        status: "Open Now",
+        area: "downtown",
+        about: "Provides legal advocacy and community support services.",
+        services: ["Housing assistance", "Utility support", "Homeless prevention"]
+      },
+      {
+        id: 50,
+        name: "Community Care, Inc.",
+        category: "Community",
+        address: "205 Bishops Way, Brookfield, WI 53005",
+        phone: "(414) 231-1400",
+        email: "",
+        website: "http://www.communitycareinc.org",
+        status: "Open Now",
+        area: "west",
+        about: "Provides health, social, and community services.",
+        services: ["Community health", "Social services"]
+      },
+      {
+        id: 51,
+        name: "Community Projects Committee, Inc.",
+        category: "Community",
+        address: "3073 S. Chase Ave., Ste. 210, Milwaukee, WI 53207",
+        phone: "(414) 444-6544",
+        email: "",
+        website: "https://www.cpforseniors.org",
+        status: "Open Now",
+        area: "south",
+        about: "Supports community projects and seniors through various services.",
+        services: ["Senior support", "Community projects"]
+      },
+      {
+        id: 52,
+        name: "Bader Philanthropies",
+        category: "Community",
+        address: "233 N. Water Street, Fourth Floor, Milwaukee, WI 53202",
+        phone: "(414) 224-6464",
+        email: "",
+        website: "http://bader.org/",
+        status: "Open Now",
+        area: "downtown",
+        about: "Provides philanthropic support and community investment.",
+        services: ["Philanthropy", "Community support"]
+      },
+      {
+        id: 53,
+        name: "Balance, Inc.",
+        category: "Community",
+        address: "1350 14th Ave. #4, Grafton, WI 53024",
+        phone: "(262) 268-6811",
+        email: "",
+        website: "http://www.balanceinc.org",
+        status: "Open Now",
+        area: "suburban",
+        about: "Supports community wellness and stability.",
+        services: ["Community wellness", "Support services"]
+      },
+      {
+        id: 54,
+        name: "Bridge to Brighter Inc.",
+        category: "Community",
+        address: "P.O. Box 174, Elm Grove, WI 53122",
+        phone: "(414) 852-5390",
+        email: "",
+        website: "https://bridgetobrighter.org/",
+        status: "Open Now",
+        area: "suburban",
+        about: "Provides resources and support for underserved communities.",
+        services: ["Resource distribution", "Community empowerment"]
+      },
+      {
+        id: 55,
+        name: "Cristo Rey Jesuit High School",
+        category: "Community",
+        address: "1818 W. National Ave, Milwaukee, WI 53204",
+        phone: "(414) 436-4600",
+        email: "",
+        website: "http://www.cristoreymilwaukee.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "A high school model that integrates rigorous academics with corporate work-study.",
+        services: ["Education", "Work-study programs"]
+      },
+      {
+        id: 56,
+        name: "Crohns & Colitis Foundation, Wisconsin Chapter",
+        category: "Community",
+        address: "17100 W. Bluemound Road, Suite 101, Brookfield, WI 53005",
+        phone: "(414) 475-5520",
+        email: "",
+        website: "https://www.crohnscolitisfoundation.org/chapters/wisconsin",
+        status: "Open Now",
+        area: "suburban",
+        about: "Supports individuals affected by Crohn’s disease and colitis through advocacy and education.",
+        services: ["Advocacy", "Support groups", "Education"]
+      },
+      {
+        id: 57,
+        name: "Danceworks, Inc.",
+        category: "Community",
+        address: "1661 N. Water Street, Milwaukee, WI 53202",
+        phone: "(414) 277-8480",
+        email: "",
+        website: "http://www.danceworksmke.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Uses dance and movement to engage and empower the community.",
+        services: ["Dance programs", "Community events"]
+      },
+      {
+        id: 58,
+        name: "Discovery World",
+        category: "Community",
+        address: "500 N. Harbor Drive, Milwaukee, WI 53202",
+        phone: "(414) 765-9966",
+        email: "",
+        website: "http://www.discoveryworld.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "A science and technology center providing interactive exhibits and educational programs.",
+        services: ["Exhibits", "Educational programs"]
+      },
+      {
+        id: 59,
+        name: "Dogs2DogTags",
+        category: "Community",
+        address: "N4715 Co. Rd. M, Plymouth, WI 53073",
+        phone: "(920) 268-4199",
+        email: "",
+        website: "https://www.dogs2dogtags.org/",
+        status: "Open Now",
+        area: "suburban",
+        about: "Connects animal welfare organizations with resources for pet care.",
+        services: ["Animal rescue support", "Resource coordination"]
+      },
+      {
+        id: 60,
+        name: "Donate Life Wisconsin",
+        category: "Community",
+        address: "450 Science Drive, Suite 220, Madison, WI 53711",
+        phone: "(608) 261-6854",
+        email: "",
+        website: "http://www.DonateLifeWisconsin.com",
+        status: "Open Now",
+        area: "south",
+        about: "Promotes organ donation and supports donor families.",
+        services: ["Organ donation advocacy", "Education"]
+      },
+      {
+        id: 61,
+        name: "Donovan Hines Foundation of Exuberance Corporation",
+        category: "Community",
+        address: "4906 N. 85th Street, Milwaukee, WI 53225",
+        phone: "(414) 395-3021",
+        email: "",
+        website: "http://www.donovanhinesfoundationof.com",
+        status: "Open Now",
+        area: "north",
+        about: "Provides resources and support through philanthropic initiatives.",
+        services: ["Philanthropy", "Community support"]
+      },
+      {
+        id: 62,
+        name: "Early Music Now",
+        category: "Community",
+        address: "759 N Milwaukee Street, Suite 420, Milwaukee, WI 53202",
+        phone: "(414) 225-3113",
+        email: "",
+        website: "http://www.earlymusicnow.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Promotes early music performances and education in Milwaukee.",
+        services: ["Music education", "Cultural events"]
+      },
+      {
+        id: 63,
+        name: "Eastcastle Place",
+        category: "Community",
+        address: "2505 E. Bradford Ave, Milwaukee, WI 53211",
+        phone: "(414) 963-8489",
+        email: "",
+        website: "http://www.eastcastleplace.com",
+        status: "Open Now",
+        area: "east",
+        about: "Provides community space and resources for local residents.",
+        services: ["Community center", "Event space"]
+      },
+      {
+        id: 64,
+        name: "Easter Seals Southeast Wisconsin",
+        category: "Community",
+        address: "2222 S. 114th Street, Wauwatosa, WI 53227",
+        phone: "(414) 449-4444",
+        email: "",
+        website: "http://www.eastersealswise.com",
+        status: "Open Now",
+        area: "south",
+        about: "Offers services for children and adults with disabilities.",
+        services: ["Therapeutic services", "Support programs"]
+      },
+      {
+        id: 65,
+        name: "Milwaukee Development Corporation (MDC)",
+        category: "Community",
+        address: "Milwaukee, WI",
+        phone: "",
+        email: "",
+        website: "https://www.mmac.org/milwaukee-development-corp.html",
+        status: "Open Now",
+        area: "downtown",
+        about: "Supports economic development initiatives in Milwaukee.",
+        services: ["Economic development", "Job creation"]
+      },
+      {
+        id: 66,
+        name: "Harambee Great Neighborhood Initiative",
+        category: "Community",
+        address: "Milwaukee, WI",
+        phone: "",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "downtown",
+        about: "Community revitalization organization (website not available).",
+        services: ["Neighborhood revitalization", "Community organizing"]
+      },
+      {
+        id: 67,
+        name: "Grand Avenue Club",
+        category: "Health",
+        address: "Milwaukee, WI",
+        phone: "",
+        email: "",
+        website: "http://www.grandavenueclub.org/",
+        status: "Open Now",
+        area: "downtown",
+        about: "Supports mental health and employment support initiatives.",
+        services: ["Mental health support", "Employment assistance"]
+      },
+      {
+        id: 68,
+        name: "Centers for Independence",
+        category: "Health",
+        address: "2020 W. Wells Street, Milwaukee, WI 53233",
+        phone: "(414) 937-2020",
+        email: "",
+        website: "http://www.mcfi.net",
+        status: "Open Now",
+        area: "west",
+        about: "Provides support services for people with disabilities.",
+        services: ["Disability support", "Advocacy"]
+      },
+      {
+        id: 69,
+        name: "Centro Hispano Milwaukee",
+        category: "Community",
+        address: "614 W. National Avenue, Milwaukee, WI 53204",
+        phone: "(414) 384-3700",
+        email: "",
+        website: "http://www.centrohispanomke.org",
+        status: "Open Now",
+        area: "downtown",
+        about: "Provides cultural, educational, and social services for the Hispanic community.",
+        services: ["Cultural programs", "Educational services", "Social services"]
+      },
+      {
+        id: 70,
+        name: "The Difference Principle",
+        category: "Community",
+        address: "205 W. Highland Avenue, Milwaukee, WI 53203",
+        phone: "",
+        email: "",
+        website: "",
+        status: "Open Now",
+        area: "downtown",
+        about: "A community organization focused on inspiring social change (website not available).",
+        services: ["Social change initiatives", "Community engagement"]
+      }
+    ];
+    /* --- Render Organization Cards --- */
+    function renderOrgCards() {
+      const container = document.getElementById("org-cards");
+      container.innerHTML = "";
+      const searchTerm = document.getElementById("resource-search").value.toLowerCase();
+      const selectedCategory = document.getElementById("resource-category").value;
+      const selectedArea = document.getElementById("resource-area").value;
+      organizations.forEach(org => {
+        if (searchTerm && !org.name.toLowerCase().includes(searchTerm) &&
+            !org.about.toLowerCase().includes(searchTerm) &&
+            !org.services.some(s => s.toLowerCase().includes(searchTerm))) {
+          return;
+        }
+        if (selectedCategory && org.category !== selectedCategory) return;
+        if (selectedArea && org.area !== selectedArea) return;
+        let badgeClass = "bg-gray-100 text-gray-800";
+        if (org.category === "Housing") badgeClass = "housing-badge";
+        else if (org.category === "Food") badgeClass = "food-badge";
+        else if (org.category === "Youth") badgeClass = "youth-badge";
+        else if (org.category === "Health") badgeClass = "health-badge";
+        else if (org.category === "Workforce") badgeClass = "workforce-badge";
+        else if (org.category === "Family") badgeClass = "family-badge";
+        else if (org.category === "Community") badgeClass = "community-badge";
+        else if (org.category === "Legal") badgeClass = "legal-badge";
+        const initials = org.name.split(" ").map(w => w[0]).join("").slice(0, 3);
+        const card = document.createElement("div");
+        card.className = "org-card bg-white rounded-xl shadow-md overflow-hidden";
+        card.innerHTML = `
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-800 font-medium mr-3">
+                  ${initials}
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">${org.name}</h3>
+                  <span class="px-2 py-1 text-xs rounded-full ${badgeClass}">${getCategoryName(org.category)}</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm mb-4">${org.about.substring(0, 100)}${org.about.length > 100 ? '...' : ''}</p>
+            <div class="flex items-center text-sm text-gray-500 mb-1">
+              <i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i>
+              <span>${org.address}</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-500 mb-4">
+              <i class="fas fa-phone mr-2" aria-hidden="true"></i>
+              <span>${org.phone}</span>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div class="flex">
+                <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">${org.status}</span>
+              </div>
+              <div>
+                <button class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-medium org-details-trigger" data-org-id="${org.id}">View Details</button>
+              </div>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+    function getCategoryName(category) {
+      switch (category) {
+        case "Housing": return "Housing &amp; Shelter";
+        case "Food": return "Food Assistance";
+        case "Youth": return "Youth Services";
+        case "Health": return "Health &amp; Mental Health";
+        case "Workforce": return "Employment";
+        case "Family": return "Family Services";
+        case "Community": return "Community Support";
+        case "Legal": return "Legal &amp; Crisis";
+        default: return category;
+      }
+    }
+    document.addEventListener("click", function(e) {
+      if (e.target && e.target.closest(".org-details-trigger")) {
+        const btn = e.target.closest(".org-details-trigger");
+        const orgId = parseInt(btn.getAttribute("data-org-id"));
+        const org = organizations.find(o => o.id === orgId);
+        if (org) {
+          document.getElementById("org-details-name").textContent = org.name;
+          const catContainer = document.getElementById("org-details-category-container");
+          let badgeClass = "bg-gray-100 text-gray-800";
+          if (org.category === "Housing") badgeClass = "housing-badge";
+          else if (org.category === "Food") badgeClass = "food-badge";
+          else if (org.category === "Youth") badgeClass = "youth-badge";
+          else if (org.category === "Health") badgeClass = "health-badge";
+          else if (org.category === "Workforce") badgeClass = "workforce-badge";
+          else if (org.category === "Family") badgeClass = "family-badge";
+          else if (org.category === "Community") badgeClass = "community-badge";
+          else if (org.category === "Legal") badgeClass = "legal-badge";
+          catContainer.innerHTML = `
+            <span class="px-2 py-1 text-xs rounded-full ${badgeClass}">${getCategoryName(org.category)}</span>
+            <span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-800">${org.status}</span>
+          `;
+          document.getElementById("org-details-logo").textContent = org.name.split(" ").map(w => w[0]).join("").slice(0, 3);
+          document.getElementById("org-details-about").textContent = org.about;
+          document.getElementById("org-modal-status").textContent = org.status;
+          const svcList = document.getElementById("org-details-services");
+          svcList.innerHTML = "";
+          org.services.forEach(svc => {
+            const li = document.createElement("li");
+            li.textContent = svc;
+            svcList.appendChild(li);
+          });
+          document.getElementById("org-modal-address").innerHTML = `<a href="geo:0,0?q=${encodeURIComponent(org.address)}" target="_blank">${org.address}</a>`;
+          document.getElementById("org-modal-phone").innerHTML = `<a href="tel:${org.phone.replace(/\D/g,'')}">${org.phone}</a>`;
+          document.getElementById("org-modal-email").innerHTML = `<a href="mailto:${org.email}">${org.email}</a>`;
+          document.getElementById("org-modal-website").innerHTML = `<a href="${org.website}" target="_blank">${org.website}</a>`;
+          document.getElementById("org-modal-directions").href = `https://maps.google.com/?q=${encodeURIComponent(org.address)}`;
+          document.getElementById("org-modal-call").href = `tel:${org.phone.replace(/\D/g,'')}`;
+          document.getElementById("org-details-modal").classList.add("active");
+        }
+      }
+    });
+    document.getElementById("close-org-details").addEventListener("click", function() {
+      document.getElementById("org-details-modal").classList.remove("active");
+    });
+    document.querySelectorAll('.filter-badge').forEach(badge => {
+      badge.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        document.getElementById('resource-category').value = category;
+        renderOrgCards();
+      });
+    });
+    document.getElementById("resource-search").addEventListener("input", renderOrgCards);
+    document.getElementById("resource-category").addEventListener("change", renderOrgCards);
+    document.getElementById("resource-area").addEventListener("change", renderOrgCards);
+    document.addEventListener("DOMContentLoaded", renderOrgCards);
+  </script>
+</body>
+</html>
